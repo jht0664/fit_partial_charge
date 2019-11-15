@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/htjung/miniconda3/envs/psi4_env/bin/psi4", line 192, in <module>
+    raise KeyError("The file %s does not exist." % args["input"])
+KeyError: 'The file sig1.4.dat does not exist.'

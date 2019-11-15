@@ -1,0 +1,17 @@
+#PBS -S /bin/bash
+#PBS -l nodes=1:ppn=12
+#PBS -N sig1.4
+#PBS -l walltime=200:00:00
+#PBS -q yethiraj
+
+source ~/.bashrc
+conda activate psi4_env
+
+cd /home/htjung/github_partial_charge/fit_partial_charge/example/psi4/sig1.4
+
+export PSI_SCRATCH=$PWD
+
+psi4 -i sig1.4.dat -n 12 >& log
+
+exit 0
+

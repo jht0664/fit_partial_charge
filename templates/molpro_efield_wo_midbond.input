@@ -1,0 +1,31 @@
+***,emmim + h electric field
+memory,100,m
+
+basis
+set,orbital;	!for orbital
+default=avdz
+set,jkfit;		!for JK integrals
+default=avdz/jkfit
+set,mp2fit;		!for E2disk/E2exch-disp
+default=avdz/mp2fit
+set,dflhf;		!for LHF
+default=avdz/jkfit
+end
+
+nosym;noorient;angstrom;
+geometry={
+}
+
+cb= 2100.2
+
+	shift_mim=value_shift !shift for bulk xc potential
+
+	dfit,basis_coul=jkfit,basis_exch=jkfit
+
+	!monomer B
+	dummy,n_atoms_monb
+	charge=0
+	{df-ks,pbe; start,atdens; asymp,shift_mim; save,$cb}
+
+Property 
+density,$cb

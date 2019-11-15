@@ -1,0 +1,19 @@
+molecule target {
+ noreorient
+ nocom
+CHARGE MULTI
+}
+
+set {
+basis aug-cc-pvdz
+scf_type df
+reference rks
+DFT_GRAC_SHIFT SHIFT_VAL
+}
+
+E, wfn = prop('pbe', properties=["GRID_ESP", "GRID_FIELD"], return_wfn=True)
+Vvals = wfn.oeprop.Vvals()
+Exvals = wfn.oeprop.Exvals()
+Eyvals = wfn.oeprop.Eyvals()
+Ezvals = wfn.oeprop.Ezvals()
+
