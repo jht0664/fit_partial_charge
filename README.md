@@ -6,8 +6,15 @@ For details, see following paper;
 > https://doi.org/10.1021/acs.jpcb.5b12371 
 
 # Credits
-Most credits should go to Dr. Jesse G. McDaniel [Website](https://ww2.chemistry.gatech.edu/mcdaniel/jesse-g-mcdaniel).
-I, Hyuntae, modified and added files for my convenience.
+Instead of utilizing the codes by Dr. Jesse G. McDaniel [Website](https://ww2.chemistry.gatech.edu/mcdaniel/jesse-g-mcdaniel),
+ Hyuntae did edit and modify user-friendly python scripts for my convenience to develop SAPT-UA force field of EMMIM and BMMIM cations.
+Please cite both papers for tracking contributions;
+> First-Principles United Atom Force Field for the Ionic Liquid BMIM+BF4–: An Alternative to Charge Scaling, 
+> Chang Yun Son, Jesse G. McDanielJ. R. Schmidt, Qiang Cui, Arun Yethiraj, J. Phys. Chem. B 2016, 120, 14, 3560-3568
+> https://doi.org/10.1021/acs.jpcb.5b12371 
+>
+> Methylation effect of cation on phase behavior of polymer/ionic liquids mixture,
+> Hyuntae Jung, Chang Yun Son, Arun Yethiraj, (in preparation)
 
 # Tutorial
 In this tutorial, I choose EMMIM cation, 1-ethyl-2,3-dimethylimidazolium, one of ionic liquids.
